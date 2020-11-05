@@ -1,17 +1,14 @@
 <?php
 
 
-if(isset($_REQUEST['submit']))
-{
+if(isset($_REQUEST['submit'])){
     
- if(empty($_POST['degree']))
- {
+    if(empty($_POST['degree'])){
     
     echo "Nothing was selected";
     
 }
-else
-{
+else{
     
     $degree = $_POST['degree'];
     
@@ -33,17 +30,17 @@ else
 <html>
 
 <head>
-    
-    <title>Degree</title>
+    <meta>
+    <title>HTML Form - Degree</title>
 </head>
 
 <body>
 
-    <form method="post" action="Degree.php">
+    <form method="post" action="degree.php">
 
-        <fieldset style="width:24%">
+        <fieldset style="width:250px">
 
-            <legend><b>DegreeE</b></legend>
+            <legend><b>DEGREE</b></legend>
             <input type="checkbox" name="degree[]" value="SSC"> SSC
             <input type="checkbox" name="degree[]" value="HSC"> HSC
             <input type="checkbox" name="degree[]" value="Bsc"> Bsc

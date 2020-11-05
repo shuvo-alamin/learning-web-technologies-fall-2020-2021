@@ -22,21 +22,19 @@ else
 <!DOCTYPE html>
 <html>
 <head>
-   
-    <title> Gender</title>
+    <title>Gender</title>
 </head>
 <body>
     
-    <form method="post" action="Gender.php">
+    <form method="post" action="gender.php">
         
-        <fieldset style="width:22%">
+        <fieldset style="width:210px">
             
-            <legend><b>Gender</b></legend>
+            <legend><b>GENDER</b></legend>
             
                 <input type="radio" name="gender" value="Male" > Male 
-				<input type="radio" name="gender" value="Female"> Female
-				<input type="radio" name="gender" value="Other"> Other 
-                <br>
+                <input type="radio" name="gender" value="Female"  > Female
+                <input type="radio" name="gender" value="Other" > Other <br>
                 <input type="text" name="field" value="<?=$gender?>">   
             
         </fieldset>

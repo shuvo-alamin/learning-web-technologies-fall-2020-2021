@@ -1,35 +1,39 @@
 <?php
 
-if(isset($_REQUEST['submit']))
-{
-  if (isset($_POST['gender'])){echo "Gender: ".$_POST['gender'];
-}        
-else
-{
-  echo "nothing was selected.";
-}
+if(isset($_REQUEST['submit'])){
+    
+    if (isset($_POST['gender'])){echo "Gender: ".$_POST['gender'];}   
+      
+else{echo "nothing was selected.";}
   
+    
 }
+
 
 ?>
 
+
+<!DOCTYPE html>
 <html>
 <head>
-     <title>Gender</title>
+    <meta>
+    <title>Gender</title>
 </head>
 <body>
     
-    <form method="post" action="Gender.php">
+    <form method="post" action="gender.php">
         
-        <fieldset style="width:21%">
-
-        <legend><b>Gender</b></legend>
-        <input type="radio" name="gender" value="Male" > Male 
-		    <input type="radio" name="gender" value="Female"> Female
-		    <input type="radio" name="gender" value="Other" > Other 
-        <hr>  
-            <input type="submit" name="submit" value="Submit">
+        <fieldset style="width:200px">
+            
+            <legend><b>GENDER</b></legend>
+            
+                <input type="radio" name="gender" value="Male" > Male 
+				<input type="radio" name="gender" value="Female"  > Female
+				<input type="radio" name="gender" value="Other" > Other <br>
+            
         </fieldset>
+        <br>
+        <input type="submit" name="submit" value="Submit">
         
     </form>
     

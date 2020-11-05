@@ -2,10 +2,12 @@
 	
 	$data = "";
 
-	if(isset($_REQUEST['submit'])){
+	if(isset($_REQUEST['submit']))
+	{
 		$name = $_REQUEST['name'];
 		
-		if($name == ""){
+		if($name == "")
+		{
 			$data = "";
 		}else{
 			$data = $name;
@@ -22,14 +24,13 @@
     	
     <form method="post">
         
-        <fieldset style="width:21%">
+        <fieldset style="width:200px">
             
          <legend><b>Name</b></legend>
          
-         <input type="text" name="name" value="<?=$data?>"> 
-         <hr>
-         <input type="submit" name="submit" value="Submit">
-         </fieldset>
+         <input type="text" name="name" value="<?=$data?>"> <hr>
+        <input style="font-family:Calibri" type="submit" name="submit" value="Submit">
+        </fieldset>
     
         
     </form>

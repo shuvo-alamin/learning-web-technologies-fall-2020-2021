@@ -19,7 +19,7 @@
 </head>
 <body>
     
-    <form method="post" action="email.php">
+    <form method="post" action="Email.php">
         
         <fieldset style="width:20%"> 
             
